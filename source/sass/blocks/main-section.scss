@@ -43,18 +43,18 @@
     line-height: 21px;
     color: $color-mikado;
     padding: 22px 34px;
-    background: #FFE182;
+    background: #ffe182;
     border-radius: 12px;
     transition: 0.5s all ease;
 
     &:hover {
       color: #ae0041;
-      text-shadow: 0px 0px 10px $color-mikado;
+      text-shadow: 0 0 10px $color-mikado;
       box-shadow: 0 0 5px 1px $color-mikado;
     }
 
     &--gray {
-      background: #EDEDED;
+      background: #ededed;
     }
   }
 }

@@ -17,7 +17,7 @@
     font-size: 20px;
     line-height: 23px;
     color: $color-floral-white;
-    transition: all 0.5s ease ;
+    transition: all 0.5s ease;
 
     &:not(:last-of-type) {
       margin: 0 0 15px 0;
@@ -29,7 +29,7 @@
     }
 
     &--mail {
-      background: #FFE182;
+      background: #ffe182;
       border-radius: 12px;
       padding: 12px 30px;
       font-family: $font-raleway;

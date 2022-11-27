@@ -37,7 +37,6 @@
       text-align: center;
       row-gap: 15px;
       animation: show 0.7s forwards;
-
     }
 
     &__link {
@@ -50,7 +49,6 @@
 
 @media (max-width: 767px) {
   .menu {
-
     &__link {
       &--mobile-show {
         display: block;

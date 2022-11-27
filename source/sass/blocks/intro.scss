@@ -1,10 +1,10 @@
 .intro {
-  background: url('../../img/main-bg.png') no-repeat center / cover;
+  background: url("../../img/main-bg.jpg") no-repeat center / cover;
 }
 
 @media (max-width: 1000px) {
   .intro {
-    background: url('../../img/main-bg-tablet.png') no-repeat;
+    background: url("../../img/main-bg-tablet.png") no-repeat;
     background-position: inherit;
     background-size: contain;
   }
@@ -12,6 +12,6 @@
 
 @media (max-width: 360px) {
   .intro {
-    background: url('../../img/main-bg-mobile.jpg') no-repeat top / contain;
+    background: url("../../img/main-bg-mobile.jpg") no-repeat top / contain;
   }
 }
