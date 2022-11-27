@@ -1,0 +1,35 @@
+.footer {
+  background: $color-mikado;
+  padding: 80px 0;
+
+  &__wrapper {
+    max-width: 1420px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    padding: 32px 0;
+
+    &__wrapper {
+      max-width: 728px;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-items: baseline;
+      row-gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}

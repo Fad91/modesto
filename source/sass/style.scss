@@ -1,0 +1,24 @@
+// Global
+
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/variables.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+
+// Blocks
+
+@import "blocks/intro.scss";
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/contacts-block.scss";
+@import "blocks/main-section.scss";
+@import "blocks/form-section.scss";
+@import "blocks/subscribe-form.scss";
+@import "blocks/footer.scss";
+@import "blocks/addresses-block.scss";
+@import "blocks/address.scss";
+@import "blocks/socials.scss";
+@import "blocks/footer-contacts.scss";
+@import "blocks/burger-btn.scss";
+@import "blocks/popup.scss";

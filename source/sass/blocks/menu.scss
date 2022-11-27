@@ -1,0 +1,68 @@
+.menu {
+  display: flex;
+  column-gap: 40px;
+
+  &__link {
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-mikado;
+    transition: all 0.5s ease;
+
+    &--tablet-show {
+      display: none;
+    }
+
+    &--mobile-show {
+      display: none;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      color: #ae0041;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    order: 2;
+    display: none;
+
+    &.open {
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+      text-align: center;
+      row-gap: 15px;
+      animation: show 0.7s forwards;
+
+    }
+
+    &__link {
+      &--tablet-show {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+
+    &__link {
+      &--mobile-show {
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}

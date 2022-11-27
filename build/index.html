@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="цветы, продажа цветов, маркетплейс, торговая площидка">
+  <meta name="description" content="торговая площадка по продаже цветов">
+  <title>Modesto flowers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Raleway:wght@300;400;500;600&family=Roboto:wght@500&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="intro">
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="img/logo.svg" width="98" height="86" alt="Modesto Flowers">
+      </a>
+      <nav class="header__nav menu js-menu">
+        <a href="#" class="menu__link">Магазины</a>
+        <a href="#" class="menu__link">Контакты</a>
+        <a href="#" class="menu__link">О нас</a>
+        <a href="#" class="menu__link menu__link--mobile-show js-btn-sign-in">Войти</a>
+        <a href="#" class="menu__link menu__link--tablet-show js-btn-sign-up">Создать аккаунт</a>
+      </nav>
+      <div class="header__contacts contacts-block">
+        <a class="contacts-block__link" href="tel:+36787547894">+3 67 8754 7894</a>
+        <div class="contacts-block__links-wrapper">
+          <a href="#" data-lang="ru" class="contacts-block__lang-link contacts-block__lang-link--visited">Ru</a>
+          <a href="#" data-lang="eng" class="contacts-block__lang-link">Eng</a>
+        </div>
+        <button type="button" class="contacts-block__btn contacts-block__btn--mobile js-btn-sign-in">Войти</button>
+        <button type="button" class="contacts-block__btn contacts-block__btn--border js-btn-sign-up">Создать аккаунт</button>
+        <button type="button" class="contacts-block__burger-btn burger-btn js-burger-btn">
+          <span class="burger-btn__line burger-btn__line--top"></span>
+          <span class="burger-btn__line burger-btn__line--middle"></span>
+          <span class="burger-btn__line burger-btn__line--bottom"></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-section">
+        <h1 class="main-section__title">Мы будем рады сотрудничать с вами на платформе
+          'Международной цветочной онлайн-площадки'!
+        </h1>
+        <h1 class="main-section__title main-section__title--mobile">Мы будем рады сотрудничать с вами на
+          Международной цветочной онлайн-площадкe!
+        </h1>
+        <p class="main-section__content">Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации!</p>
+        <div class="main-section__links-wrapper">
+          <a href="#form" class="main-section__link">Начать покупать</a>
+          <a href="#form" class="main-section__link main-section__link--gray">Начать продавать</a>
+        </div>
+      </section>
+      <section class="form-section element-animation">
+        <div class="form-section__wrapper" id="form">
+          <div class="form-section__wrapper--text">
+            <h2 class="form-section__title">Заполните форму и начните развивать свой бизнес прямо сейчас!</h2>
+            <p class="form-section__content">Регистрация на нашем сайте занимает несколько минут,
+              просим ответить на все вопросы полностью и корректно! После подтверждения регистрации вы попадёте в систему,
+              где большинство процессов автоматизированы, что сэкономит ваше время и деньги!
+            </p>
+          </div>
+          <form action="#" method="post" class="form-section__form subscribe-form js-form" novalidate="">
+            <div class="subscribe-form__wrapper js-step-1">
+              <label class="subscribe-form__label js-input-wrapper" for="name">
+                <span>Ваше имя</span>
+                <input class="subscribe-form__input" type="text" name="name" id="name" placeholder="Фролова Александра Васильевна">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <label class="subscribe-form__label js-input-wrapper" for="company">
+                <span>Название Компании</span>
+                <input class="subscribe-form__input" type="text" name="company" id="company" placeholder="ООО Атлантика">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <label class="subscribe-form__label js-input-wrapper" for="email">
+                <span>E-mail</span>
+                <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="flolovaalexa@com.rur">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <label class="subscribe-form__label js-input-wrapper" for="phone">
+                <span>Номер телефона</span>
+                <input class="subscribe-form__input" type="tel" name="phone" id="phone" placeholder="+7 (XXX) - XXX XX XX">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <label class="subscribe-form__label js-input-wrapper" for="promo">
+                <span>Промокод</span>
+                <input class="subscribe-form__input" type="text" name="promo" id="promo" placeholder="HGF864">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <button type="button" class="subscribe-form__btn js-btn-next">Далее</button>
+            </div>
+            <div class="form__wrapper js-step-2 hide">
+              <label class="subscribe-form__label js-input-wrapper" for="password">
+                <span>Пароль</span>
+                <input class="subscribe-form__input" type="password" name="password" id="password" placeholder="Создайте пароль">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <label class="subscribe-form__label js-input-wrapper" for="password-confirm">
+                <span>Подтвердите пароль</span>
+                <input class="subscribe-form__input" type="password" name="password-confirm" id="password-confirm" placeholder="Повторите пароль">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <div class="subscribe-form__code-check js-code">f4uk6</div>
+              <label class="subscribe-form__label js-input-wrapper" for="code-check">
+                <span>Введите символы из картинки</span>
+                <input class="subscribe-form__input" type="text" name="code-check" id="code-check" placeholder="Введите символы с картинки">
+                <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+              </label>
+              <div class="subscribe-form__buttons">
+                <button type="button" class="subscribe-form__btn subscribe-form__btn--back js-btn-back">Назад</button>
+                <button type="submit" class="subscribe-form__btn js-subscribe-btn">Подтвердить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="popup js-sign-in-popup hide">
+        <form class="popup__form subscribe-form js-login-form" novalidate="">
+          <button type="button" class="popup__btn js-close-btn"></button>
+          <label class="subscribe-form__label js-input-wrapper" for="sign-in-email">
+            <span>E-mail</span>
+            <input class="subscribe-form__input" type="email" name="sign-in-email" id="email-sign-in" placeholder="flolovaalexa@com.rur">
+            <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+          </label>
+          <button type="submit" class="subscribe-form__btn js-subscribe-btn">Войти</button>
+          <p class="subscribe-form__success js-success hide">Вы успешно вошли!</p>
+        </form>
+      </div>
+      <div class="popup js-sign-up-popup hide">
+        <form class="popup__form subscribe-form js-sign-up-form" novalidate="">
+          <button type="button" class="popup__btn js-close-btn"></button>
+          <label class="subscribe-form__label js-input-wrapper" for="sign-up-email">
+            <span>E-mail</span>
+            <input class="subscribe-form__input" type="email" name="sign-up-email" id="email-sign-up" placeholder="flolovaalexa@com.rur">
+            <span class="subscribe-form__error js-error hide">Обязательное поле, приятель</span>
+          </label>
+          <button type="submit" class="subscribe-form__btn js-subscribe-btn">Создать Аккаунт</button>
+          <p class="subscribe-form__success js-success hide">Вы успешно зарегистрированы!</p>
+        </form>
+      </div>
+    </main>
+    <footer class="footer element-animation">
+      <div class="footer__wrapper">
+        <div class="footer__addresses addresses-block">
+          <div class="adresses-block__item address">
+            <h2 class="address__title">Наши офисы</h2>
+            <p class="address__text">Московский офис</p>
+            <p class="address__text">+7 455 267-89-07</p>
+            <p class="address__text">Берсеневский пер., д. 56, стр. 4,</p>
+            <p class="address__text">6-й эт., Москва, 567754</p>
+          </div>
+          <div class="adresses-block__item address">
+            <p class="address__text">Ростовский офис</p>
+            <p class="address__text">+7 878 888-01-67</p>
+            <p class="address__text">Буденовский пр-т, д. 84, 6-й эт.</p>
+            <p class="address__text">Ростов-на-Дону, 679965</p>
+          </div>
+        </div>
+        <div class="footer__socials socials">
+          <h2 class="socials__title">Мы в соц сетях</h2>
+          <a class="socials__link" href="#">Instagram</a>
+          <a class="socials__link" href="#">Facebook</a>
+        </div>
+        <div class="footer__contacts footer-contacts">
+          <h2 class="footer-contacts__title">Свяжитесь с нами</h2>
+          <a href="tel:+36787547894" class="footer-contacts__link footer-contacts__link--tel">+3 67 8754 7894</a>
+          <p class="footer-contacts__text">mflowers@flo.com</p>
+          <a class="footer-contacts__link footer-contacts__link--mail" href="mailto:mflowers@flo.com">
+            <span>Написать</span>
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.28924 0.907491C8.42388 0.635003 11.5763 0.635003 14.7109 0.907491L16.2211 1.03877C17.2265 1.12617 18.0876 1.72584 18.5337 2.58361C18.5908 2.69335 18.548 2.82621 18.4428 2.89132L12.1769 6.77024C10.833 7.60216 9.1385 7.61962 7.77778 6.81556L1.46995 3.0882C1.36804 3.02798 1.32126 2.90402 1.36719 2.79492C1.77535 1.82536 2.69298 1.13318 3.77901 1.03877L5.28924 0.907491Z" fill="black"></path>
+              <path d="M1.36206 4.76676C1.20609 4.6746 1.00709 4.77377 0.988912 4.95402C0.735176 7.46965 0.796587 10.0091 1.17314 12.5132C1.37166 13.8333 2.44907 14.8454 3.77901 14.961L5.28924 15.0923C8.42388 15.3647 11.5763 15.3647 14.7109 15.0923L16.2211 14.961C17.5511 14.8454 18.6285 13.8333 18.827 12.5132C19.2145 9.93613 19.2683 7.32162 18.9882 4.73415C18.9686 4.55264 18.7662 4.45529 18.611 4.55139L12.9664 8.04564C11.1482 9.17118 8.85566 9.19479 7.01468 8.10695L1.36206 4.76676Z" fill="black"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

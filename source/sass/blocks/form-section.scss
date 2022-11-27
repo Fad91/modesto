@@ -1,0 +1,79 @@
+.form-section {
+  background: url('../../img/form-section-bg.jpg') no-repeat center / cover;
+  padding: 200px 0;
+
+  &__wrapper {
+    max-width: 1140px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 80px;
+    background: url('../../img/form-bg.jpg') no-repeat center / cover;
+    display: flex;
+    justify-content: space-between;
+
+    &--text {
+      max-width: 580px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: $font-marmelad;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: $color-mikado;
+    margin: 0 0 40px 0;
+  }
+
+  &__content {
+    font-family: $font-raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-mikado;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form-section {
+    padding: 40px 0;
+
+    &__wrapper {
+      padding: 32px;
+      flex-direction: column;
+      background: $color-floral-white;
+
+      &--text {
+        max-width: 100%;
+      }
+    }
+
+    &__content {
+      margin: 0 0 60px 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .form-section {
+    padding: 20px 0;
+
+    &__wrapper {
+      padding: 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+      margin: 0 0 32px 0;
+    }
+
+    &__content {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 0 32px 0;
+    }
+  }
+}

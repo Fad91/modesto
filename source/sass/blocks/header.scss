@@ -1,0 +1,26 @@
+.header {
+  max-width: 1420px;
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    max-width: 768px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    max-width: 320px;
+
+    &__logo {
+      width: 48px;
+    }
+  }
+}

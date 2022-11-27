@@ -1,0 +1,54 @@
+.footer-contacts {
+  color: $color-floral-white;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: $font-marmelad;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 0 25px 0;
+  }
+
+  &__link {
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-floral-white;
+    transition: all 0.5s ease ;
+
+    &:not(:last-of-type) {
+      margin: 0 0 15px 0;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      color: #ff08da;
+    }
+
+    &--mail {
+      background: #FFE182;
+      border-radius: 12px;
+      padding: 12px 30px;
+      font-family: $font-raleway;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $color-mikado;
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 0 15px 0;
+  }
+}

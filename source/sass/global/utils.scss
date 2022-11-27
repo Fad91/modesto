@@ -1,0 +1,13 @@
+// Утилитарные классы
+.hide {
+  display: none !important;
+}
+
+.element-animation {
+  opacity: 0;
+
+  &.element-show {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+}

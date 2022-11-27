@@ -1,0 +1,128 @@
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  width: 100%;
+
+  &__label {
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-mikado;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 0 0 20px 0;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 9px;
+
+    & .subscribe-form__btn--loading::before {
+      left: 40%;
+    }
+  }
+
+  &__input {
+    background: #FFF8E1;
+    border-radius: 6px;
+    width: 100%;
+    padding: 16px 10px;
+    border: none;
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__error {
+    text-align: center;
+    color: #ff0000;
+  }
+
+  &__code-check {
+    font-family: $font-rubik;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    color: #FFF8E1;
+    background: #A0B3AF;
+    border-radius: 12px;
+    padding: 21px 34px;
+    text-align: center;
+    letter-spacing: 21px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+  }
+
+  &__btn {
+    background: #FFE182;
+    border-radius: 12px;
+    width: 100%;
+    font-family: $font-raleway;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-mikado;
+    padding: 16px 10px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    min-height: 50px;
+
+    &--back {
+      background: $color-whisper;
+    }
+
+    &:hover {
+      color: #ae0041;
+      text-shadow: 0px 0px 10px $color-floral-white;
+      box-shadow: 0 0 5px 1px $color-mikado;
+    }
+
+    &--loading {
+      &:before {
+        content: '';
+        width: 35px;
+        height: 35px;
+        border: 7px solid #f3f3f3;
+        border-top: 7px solid #ae0041;
+        border-radius: 50%;
+        position: absolute;
+        top: 15%;
+        left: 44%;
+        animation: spin 2s linear infinite;
+        transform: translate(-50%,-15%);
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 1000px) {
+  .subscribe-form {
+    max-width: 100%;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe-form {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.addresses-block {
+  display: flex;
+  column-gap: 40px;
+  align-items: flex-end;
+}
+
+@media (max-width: 1000px) {
+  .addresses-block {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+

@@ -1,0 +1,19 @@
+.address {
+  color: $color-floral-white;
+
+  &__title {
+    font-family: $font-marmelad;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 0 25px 0;
+  }
+
+  &__text {
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+  }
+}
